@@ -1,17 +1,8 @@
-
 {
   "name": "youtube_downloader",
   "version": "1.0.0",
   "description": "Conver any YouTube video to mp3 and download it.",
   "main": "app.js",
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
-    },
-    {
-      "url": "heroku/nodejs"
-    }
-  ],
   "scripts": {
     "start": "node app",
     "dev": "nodemon app"
@@ -23,7 +14,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "fluent-ffmpeg": "^2.1.2",
-    "minimist": "^1.2.5",
     "ytdl-core": "^1.0.7"
   },
   "devDependencies": {

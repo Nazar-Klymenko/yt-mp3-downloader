@@ -59,9 +59,7 @@ function setLanguage(language) {
   document.querySelector(".name").innerHTML = language.name;
   document.querySelector(".download-span").innerHTML = language.download;
 }
-document.querySelector(".video-format").addEventListener("click", () => {
-  console.log(document.querySelector(".please").value);
-});
+
 btn.addEventListener("click", () => {
   console.log(`The URL: ${URL.value}`);
   btn.classList.add("clicked");

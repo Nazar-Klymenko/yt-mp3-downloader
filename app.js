@@ -14,7 +14,7 @@ app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
 });
 
-app.use(express.static("../"));
+app.use(express.static("./client/"));
 
 app.get("/download", (req, res) => {
   const URL = req.query.URL;
