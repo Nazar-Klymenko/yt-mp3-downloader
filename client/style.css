@@ -219,6 +219,7 @@ body {
   font-weight: 400;
   padding: 0 8px;
 }
+
 .name {
   margin-left: 6px;
   text-decoration: none;
@@ -307,6 +308,10 @@ body {
     margin-left: -280px;
   }
   .header-main {
-    font-size: 1.8em;
+    font-size: 1.6em;
+  }
+  .name,
+  .cred {
+    font-size: 0.8em;
   }
 }
