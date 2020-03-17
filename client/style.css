@@ -76,6 +76,7 @@ body {
   height: 3rem;
   border: 3px solid #ff0000;
   /* border-right: none; */
+  margin-right: -4px;
   flex: 4;
 }
 .video-url:focus {
