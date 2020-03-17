@@ -77,7 +77,7 @@ function removeBtnStyle() {
 }
 
 function sendUrl(URL) {
-  location.href = `http://localhost:4000/download?URL=${URL}`;
+  location.href = `https://youtube-mp3-downloader-nk.herokuapp.com/download?URL=${URL}`;
 }
 
 const iframe = document.createElement("iframe");
