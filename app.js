@@ -42,7 +42,6 @@ function Download(URL, res, fixed) {
   });
   ffmpeg(stream)
     .preset(filePreset)
-    .audioBitrate(128)
     .pipe(fs.createWriteStream(res));
   //fs.createWriteStream(res)
 }
