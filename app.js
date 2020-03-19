@@ -43,7 +43,7 @@ function Download(URL, res, fixed) {
   ffmpeg(stream)
     .preset(filePreset)
     // .audioBitrate(128)
-    .pipe(res);
+    .pipe(fs.createWriteStream(res));
   //fs.createWriteStream(res)
 }
 
