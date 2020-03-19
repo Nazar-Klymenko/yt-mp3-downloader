@@ -4,7 +4,6 @@ const ytdl = require("ytdl-core");
 const cors = require("cors");
 const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 const ffmpeg = require("fluent-ffmpeg");
-const fs = require("fs");
 
 ffmpeg.setFfmpegPath(ffmpegPath);
 
@@ -42,7 +41,7 @@ function Download(URL, res, fixed) {
   });
   ffmpeg(stream)
     .preset(filePreset)
-    .pipe(fs.createWriteStream(res));
+    .pipe(res);
 }
 
 app.get("*", (req, res) => {
