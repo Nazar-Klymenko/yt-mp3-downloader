@@ -43,7 +43,6 @@ function Download(URL, res, fixed) {
   ffmpeg(stream)
     .preset(filePreset)
     .pipe(fs.createWriteStream(res));
-  //fs.createWriteStream(res)
 }
 
 app.get("*", (req, res) => {
